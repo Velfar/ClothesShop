@@ -50,22 +50,21 @@
         }
 
         article {
-            display: inline-block;
-            width: 49%;
+            display: flex;
             height: 250px;
             background-color: #F9F6F1;
         }
 
-        .women {
-            margin-left: 12px;  
+        article div {
+            flex-grow: 1;
         }
 
-        article.men div {
+        .men div {
             margin-left: 30%;
             margin-top: 60px;
         }
 
-        article.women div {
+        .women div {
             margin-left: 5%;
             margin-top: 60px;
         }
@@ -131,13 +130,15 @@
         <div>БЕСПЛАТНАЯ ДОСТАВКА ОТ 3000Р</div>
         <div>Сделайте заказ и получите подарок!</div>
     </section>
-    <article class="men">
+    <article>
+        <div class="men">
         <div>МУЖСКАЯ КОЛЛЕКЦИЯ</div>
         <div>Обувь, полуверы, костюмы</div>
-    </article>
-    <article class="women">
+        </div>
+        <div class="women">
         <div>ЖЕНСКАЯ КОЛЛЕКЦИЯ</div>
         <div>Обувь, полуверы, костюмы</div>
+        </div>
     </article>
     <div class="new-models">НОВЫЕ МОДЕЛИ</div>
     <div class="lower-block"></div>
